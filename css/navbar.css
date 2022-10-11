@@ -17,6 +17,7 @@ body {
     width: 100%;
     top: 0;
     z-index: 1;
+    margin-top: 150px;
 }
 
 #navlist a {
@@ -51,7 +52,6 @@ body {
     margin-right: 3%;
 }
 /*
-
 #socials {
     background-color: #919191;
     position: fixed;
