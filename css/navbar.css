@@ -11,46 +11,43 @@ body {
 #navlist {
     overflow: hidden;
     background-color:  #919191;
-    padding: 20px 10px;
+    padding: 12px 10px;
     transition: 0.4s;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1;
-    margin-top: 150px;
+    margin-top: 30px;
 }
 
 #navlist a {
     float: left;
-    color: rgb(255, 255, 255);
-    text-align: center;
+    color: rgb(0, 0, 0);
     padding: 3px;
     margin-left: 30px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 19px;
     line-height: 25px;
     border-radius: 4px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    
     /*background-color: rgb(129, 129, 129);*/
 }
 
 #navlist #logo {
     float: left;
     width: 120px;
-    position: relative;
-    right: 1250px;
 }
 
 #navlist a:hover {
-    color: #000000, 126, 81;
+    color: #ffffff;
 }
 
 #navlist-right {
     margin-top: .10%;
-    float: right;
+    float: left;
     margin-right: 3%;
 }
+
 /*
 #socials {
     background-color: #919191;
