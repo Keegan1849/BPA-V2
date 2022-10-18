@@ -94,11 +94,11 @@
                   let i;
                   let slides = document.getElementsByClassName("mySlides");
                   let balls = document.getElementsByClassName("ball");
-                  for (i = 0; i < slides.length; i++) {
+                  for (i = 0; i < 11; i++) {
                     slides[i].style.display = "none";  
                   }
                   slideIndex++;
-                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  if (slideIndex > 11) {slideIndex = 1}    
                   for (i = 0; i < balls.length; i++) {
                     balls[i].className = balls[i].className.replace(" active1", "");
                   }
