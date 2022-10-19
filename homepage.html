@@ -13,6 +13,7 @@
 
         <script src="/javascript/nav.js"></script>
         <script src="/javascript/filter.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
     </head>
@@ -82,8 +83,12 @@
                 
                 <div style="text-align:center">
                   <span class="ball"></span> 
+                  <span class="ball"></span>
+                  <span class="ball"></span>
                   <span class="ball"></span> 
-                  <span class="ball"></span> 
+                  <span class="ball"></span>
+                  <span class="ball"></span>
+                  <span class="ball"></span>
                 </div>
                 
                 <script>
@@ -98,8 +103,12 @@
                     slides[i].style.display = "none";  
                   }
                   slideIndex++;
-                  if (slideIndex > 11) {slideIndex = 1}    
-                  for (i = 0; i < balls.length; i++) {
+                  if (slideIndex > 11) {slideIndex = 1}
+
+                  //for (i = 0; i < balls.length; i++) {
+                    //balls[i].className = balls[i].className.replace(" active1", "");
+                  //}
+                  for (i = 0; i < 7; i++) {
                     balls[i].className = balls[i].className.replace(" active1", "");
                   }
                   slides[slideIndex-1].style.display = "block";  
