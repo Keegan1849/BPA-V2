@@ -8,6 +8,9 @@
         <link rel="stylesheet" href="/css/navbar.css">
         <link rel="stylesheet" href="/css/filter.css">
         <link rel="stylesheet" href="/css/socials.css">
+        <link rel="stylesheet" href="/css/loan.css">
+
+
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -156,10 +159,30 @@
               </div>
             </center>
         </div>
-        
+        <div id="loancal">
+          <h1 id="Lhead"> Loan Calculator</h1>
+          <div class="input">
+
+            <p>Loan Amount: $</p>
+             <input id="amount" type="number" min="1" max="5000000" onchange="computeLoan()">
+            <p>Interest Rate: %</p>
+             <input id="interest_rate" min="0" max="100" value="10" step=".1" onchange="computeLoan()">
+            <p>Months to Pay: </p>
+             <input id="months" type="number" min="1" max="300" value="1" step="1" onchange="computeLoan()">
+           
+           </div>
+           <h2 id="payment"></h2>
+        </div>
+        <br>
+        <br>
+
+        <br>
+
+
         <center>
             <div class="mapouter"><div class="gmap_canvas"><iframe id="gmap_canvas" src="https://maps.google.com/maps?q=DACC&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br></div></div>
         </center>
+
 
         <div id="lowercontent">
             <h1 id="testdhead">
