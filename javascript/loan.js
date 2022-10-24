@@ -1,0 +1,1 @@
+const loanAmountInput = document.querySelector("")
