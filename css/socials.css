@@ -1,7 +1,7 @@
 /* The navigation bar */
 .navbar2 {
     overflow: hidden;
-    background-color: #919191;
+    background-color: #b1b1b1;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
