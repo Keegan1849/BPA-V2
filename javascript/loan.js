@@ -23,3 +23,8 @@ const calculateEMI = () => {
 
     return emi;
 };
+const updateDate = (emi) => {
+     loanEMIvalue.innerHTML = Math.round(emi);
+
+     let totalAmount = Math.round(loanTenure * emi)
+}
