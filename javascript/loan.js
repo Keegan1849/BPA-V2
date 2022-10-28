@@ -26,5 +26,16 @@ const calculateEMI = () => {
 const updateDate = (emi) => {
      loanEMIvalue.innerHTML = Math.round(emi);
 
-     let totalAmount = Math.round(loanTenure * emi)
-}
+     let totalAmount = Math.round(loanTenure * emi);
+     totalAmountValue.innerHTML = totalAmount;
+
+     let totalInterestPlayer = Math.round(totalAmount - loanAmount);
+     totalInterestValue.innerHTML = totalInterestPlayer;
+
+};
+
+const init = () => {
+  let emi = calculateBtn();
+  updateDate(emi);
+};
+init();
