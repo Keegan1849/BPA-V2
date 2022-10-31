@@ -1,12 +1,12 @@
 /* The navigation bar */
 .navbar2 {
     overflow: hidden;
-    background-color: #00A79D;
+    background-color: #ffffff;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
     height: 30px;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid #00A79D;
     z-index: 10;
   }
   
@@ -24,3 +24,5 @@
   .navbar2 a:hover {
     color: rgb(255, 255, 255);
   }
+
+  /*Teal Color Code 00A79D*/

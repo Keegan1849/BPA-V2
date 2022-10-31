@@ -19,6 +19,8 @@
 
       <div class="navbar2">
         <a href="contact.html" style="padding-right: 4%;">CONTACT</a>
+        <a href="homepage.html#gmap_canvas" style="padding-right: 1.5%;">MAP</a>
+        <img src="/images/marker-removebg-preview-removebg-preview.png" width="20px" style="float: right; margin-top: 5px;">
         <a style="padding-right: 1.5%;">(000)-000-0000</a>
         <!--<a><img src="images/marker-removebg-preview-removebg-preview.png" width="20px"></a>-->
       </div>
@@ -122,8 +124,28 @@
                 <a style="padding-left: 20px;" href="#about">About Us</a>    
             </div>
         </div>  
+        <center>
         <div id="content">
           <h1>Contact Us</h1>
-        </div>   
+            <form id="input">
+              <label class="lbl" for="fname">First Name</label><br>
+              <input type="text" required id="fname" />
+
+              <label style="padding-left: 50px;" class="lbl" for="lname">Last Name</label><br>
+              <input type="text" required id="lname" />
+              <br>
+              <label class="lbl" for="email">Email</label><br>
+              <input type="email" required id="email" name="email">
+
+              <label class="lbl" for="phone">Phone Number</label><br>
+              <input type="tel" required id="phone" name="phone" maxlength="9" minlength="9">
+              <br>
+              <label class="lbl" for="zip">Zip Code</label><br>
+              <input type="text" required minlength="5" maxlength="5" id="zip" />
+
+              <input type="submit">
+          </form>
+        </div>
+      </center>
     </body>
 </html>

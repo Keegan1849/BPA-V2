@@ -1,9 +1,7 @@
 /* Content design */
-.content {
-  margin-top:150px;
+#content {
+  margin-top: 150px;
   padding:15px 15px 575px;
-  font-size:22px;
-  font-weight: lighter;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -167,4 +165,17 @@ to {opacity: 1}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
 .prev, .next,.text {font-size: 11px}
+}
+
+#input{
+  width: 60%; 
+}
+
+.lbl{
+  font-weight: lighter;
+  color: #717171;
+}
+
+h1{
+  color: #717171;
 }
