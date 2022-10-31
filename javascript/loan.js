@@ -10,7 +10,7 @@ const calculateBtn = document.querySelector(".calculate-button");
 
 let loanAmount = parseFloat(loanAmountInput.value);
 let interestRate = parseFloat(interestRateInput.value);
-let loanTenure = parseFloat(interestAmountInput.value);
+let loanTenure = parseFloat(interestTenureInput.value);
 
 let interest = interestRate / 12 / 100;
 
@@ -26,5 +26,17 @@ const calculateEMI = () => {
 const updateDate = (emi) => {
      loanEMIvalue.innerHTML = Math.round(emi);
 
-     let totalAmount = Math.round(loanTenure * emi)
-}
+     let totalAmount = Math.round(loanTenure * emi);
+     totalAmountValue.innerHTML = totalAmount;
+
+     let totalInterestPlayer = Math.round(totalAmount - loanAmount);
+     totalInterestValue.innerHTML = totalInterestPlayer;
+
+};
+
+const init = () => {
+  let emi = calculateEMI ();
+  updateDate(emi);
+};
+init();
+
