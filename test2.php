@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="/css/filter.css">
         <link rel="stylesheet" href="/css/imageslider.css">
         <link rel="stylesheet" href="/css/socials.css">
+        <link rel="stylesheet" href="/css/Test.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -56,6 +57,10 @@
                     
 
 
+
+
+        </div>
+            <center>
                 <table id="tablecar">
 
                     <tr>
@@ -91,8 +96,7 @@
                         $conn->close();
                     ?>
                 </table>
-
-        </div>
+            </center>
     </body>
 </html>
 
