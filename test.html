@@ -1,126 +1,111 @@
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * {box-sizing: border-box;}
+  body {font-family: Verdana, sans-serif;}
+  .mySlides {display: none;}
+  img {vertical-align: middle;}
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 100px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+  </style>
+  </head>
+  <body>
+  
+  <div class="slideshow-container">
+  
+  <div class="mySlides fade">
+    <img src="images/CarBrandLogos/audi-logo.png" style="width:100%">
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="images/CarBrandLogos/bmw-logo.png" style="width:100%">
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="images/CarBrandLogos/cadillac-logo.png" style="width:100%">
+  </div>
 
-        <title>USED CARS</title>
-        <link rel="stylesheet" href="/css/homepage.css">
-        <link rel="stylesheet" href="/css/slider.css">
-        <link rel="stylesheet" href="/css/navbar.css">
-        <link rel="stylesheet" href="/css/filter.css">
-        <link rel="stylesheet" href="/css/socials.css">
-        <link rel="stylesheet" href="/css/loan.css">
+  <div class="mySlides fade">
+    <img src="images/CarBrandLogos/chevrolet-logo.png" style="width:100%">
+  </div>
 
-
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-
-        <script src="/javascript/nav.js"></script>
-        <script src="/javascript/filter.js"></script>
-
-
-    </head>
-    <body>
-
-      <div class="navbar2">
-        <a href="" style="padding-right: 4%;">CONTACT</a>
-        <a href="#gmap_canvas" style="padding-right: 1.5%;">MAP</a>
-        <img src="/images/marker-removebg-preview-removebg-preview.png" width="20px" style="float: right; margin-top: 5px;">
-        <a style="padding-right: 1.5%;">(000)-000-0000</a>
-        <!--<a><img src="images/marker-removebg-preview-removebg-preview.png" width="20px"></a>-->
-      </div>
-
-        <div id="navlist">
-
-            <div id="navlist-right">
-
-                <img id="logo" src="images/logos/BPA logo.png">
-                <a href="homepage.html">Home</a>
-                <a href="inventory.html">Inventory</a>
-                <a href="#contact">Contact Us</a>
-                <a href="#about">About Us</a>    
-            </div>
-        </div>
-        
-        <div class="content">
-            <center>
-            <div class="filter">
-                <div class="dropdown">
-                    <button class="dropbtn">Make</button>
-                    <div class="dropdown-content">
-                      <a onclick="addMyItem(1)">Chevy</a>
-                      <a onclick="addMyItem(2)">Dodge</a>
-                      <a onclick="addMyItem(3)">Ford</a>
-                      <a onclick="addMyItem(4)">GMC</a>
-                    </div>
-                  </div> 
-                <div class="dropdown">
-                  <button class="dropbtn">Model </button>
-                  <div id="modelMenu" class="dropdown-content">
-                    <span>Select Make</span>
-                  </div>
-                </div> 
-                <div class="dropdown">
-                  <button class="dropbtn">Price 
-                    <i class="fa fa-caret-down"></i>
-                  </button>
-                  <div class="dropdown-content">
-        
-                  </div>
-                </div> 
-              </div>
-            </center>
-        </div>
-        
-
-        <br>
-        <br>
-
-        <br>
-
-
-        <center>
-            <div class="mapouter"><div class="gmap_canvas"><iframe id="gmap_canvas" src="https://maps.google.com/maps?q=DACC&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br></div></div>
-        </center>
-
-
-        <div id="lowercontent">
-            <h1 id="testdhead">
-                Schedule a Test drive
-            </h1>
-            <p id="testdcont">
-                Schedule a test drive with us today. Here at Motors Unlimited we believe that test drives are important for getting the right car for you.Our test drives are free and fast. Wether you decide to get the car, or prefer to keep looking, we never charge even the smallest fee. Test drives must be set up in advance online or by calling us at 000-000-0000. We require advanced notice in order to more efficiently get our customers in the cars that are right for them.
-            </p>
-            <h1 id="testdhead2">
-                Auto Financing
-            </h1>
-            <p id="testdcont">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus accusamus dolorum nesciunt incidunt unde, iusto praesentium perspiciatis voluptatem ipsa aperiam in repellendus? A quasi eius, nam libero consectetur ea excepturi.
-            </p>
-            <h1 id="testdhead3">
-                Auto Service & Parts
-            </h1>
-            <p id="testdcont">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta a iste doloremque odit inventore magni in dignissimos animi facere natus, quae harum aliquam error! Aliquid dicta nam rem eum aspernatur?
-            </p>
-            <div id="schedule">
-              <table>
-                <tr>
-                  <th>Company</th>
-                  <th>Contact</th>
-                  <th>Country</th>
-                </tr>
-                <tr>
-                  <td>Alfreds Futterkiste</td>
-                  <td>Maria Anders</td>
-                  <td>Germany</td>
-                </tr>
-                <tr>
-                  <td>Centro comercial Moctezuma</td>
-                  <td>Francisco Chang</td>
-                  <td>Mexico</td>
-                </tr>
-              </table>
-            </div>
-        </div>          
-    </body>
-</html>
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+  
+  <script>
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+  </script>
+  
+  </body>
