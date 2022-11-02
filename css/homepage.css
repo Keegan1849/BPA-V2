@@ -53,7 +53,7 @@ body {
   width: 75%;
 }
 #testdhead{
-  width: 35%;
+  width: 40%;
 }
 #testdhead2{
   width: 35%;
@@ -64,12 +64,18 @@ body {
   padding-top: 5%;
 }
 #testdcont{
-  width: 42%;
+  width: 20%;
   padding-top: .5%;
+
 }
 #schedule{
   float: right;
 }
+
+#schedule, #testdcont{
+  display: inline-block;
+}
+
 #gmap_canvas{
   overflow:hidden;
   background:none!important;
