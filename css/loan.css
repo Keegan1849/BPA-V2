@@ -20,7 +20,7 @@
   padding: 32px;
 }
 
-.loan-calculator .top .loan-Header {
+.loan-calculator .top h2 {
   margin-top: 0;
 }
 
@@ -30,7 +30,7 @@
   justify-content: space-between;
 }
 
-.loan-calculator .header {
+.loan-calculator .title {
   margin-bottom: 16px;
 }
 
