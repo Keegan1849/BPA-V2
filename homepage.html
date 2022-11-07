@@ -92,43 +92,49 @@
             </div>
         </div>
         <!--END NAVBAR-->
-          <center>
-            <div class="filter">
-                <div class="dropdown">
-                    <button class="dropbtn">Make</button>
-                    <div class="dropdown-content">
-                      <a onclick="addMyItem(1)">Chevy</a>
-                      <a onclick="addMyItem(2)">Dodge</a>
-                      <a onclick="addMyItem(3)">Ford</a>
-                      <a onclick="addMyItem(4)">GMC</a>
-                    </div>
-                  </div> 
-                <div class="dropdown">
-                  <button class="dropbtn">Model </button>
-                  <div id="modelMenu" class="dropdown-content">
-                    <span>Select Make</span>
+        <!--
+        <center>
+          <div class="filter">
+              <div class="dropdown">
+                <button class="dropbtn">Make</button>
+                  <div class="dropdown-content">
+                    <a onclick="addMyItem(1)">Chevy</a>
+                    <a onclick="addMyItem(2)">Dodge</a>
+                    <a onclick="addMyItem(3)">Ford</a>
+                    <a onclick="addMyItem(4)">GMC</a>
                   </div>
-                </div> 
+              </div> 
+              <div class="dropdown">
+                <button class="dropbtn">Model</button>
+                <div id="modelMenu" class="dropdown-content">
+                  <span>Select Make</span>
+                </div>
+              </div> 
                 <div class="dropdown">
                   <button class="dropbtn">Price 
                     <i class="fa fa-caret-down"></i>
                   </button>
-                  <div class="dropdown-content">
-        
-                  </div>
-                </div> 
-              </div>
-          </center>
+                  <div class="dropdown-content">      
+                </div>
+              </div> 
+            </div>
+        </center>
+        -->
+      <div class="container-fluid" style="height: 100%; padding: 0;">
+        <img style="width: 100%; height: 100%;" src="images/PlaceHolderCars/Hyundai-resized2.jpg">
+      </div>
+      <div class="container-fluid" style="padding: 0; padding-top: 1000px;">
+
+        <!--START LOAN CALCULATOR-->
         <div class="loan-calculator">
           <div class="top">
             <h2 class="loan-Header">Loan Calculator</h2>
-    
             <form action="#">
               <div class="group">
                 <div class="header">Amount</div>
                 <input type="text" value="30000" class="loan-amount" />
               </div>
-    
+
               <div class="group">
                 <div class="header">Interest Rate</div>
                 <input type="text" value="8.5" class="interest-rate" />
@@ -160,72 +166,65 @@
     
               <button class="calculate-btn">Calculate</button>
             </div>
-    
+
             <div class="right">
               <canvas id="myChart" width="400" height="400"></canvas>
             </div>
+
           </div>
         </div>
-
-
+        <!--END LOAN CALCULATOR-->
         <br>
         <br>
-
         <br>
-
-    <div class="container-fluid content-lower">
-      <div class="row">
-        <div class="col-md">
-        <center>
-            <div class="mapouter"><div class="gmap_canvas"><iframe id="gmap_canvas" src="https://maps.google.com/maps?q=DACC&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br></div></div>
-        </center>
-        </div>
-      </div>
-    </div>
-
-<div class="container content-lower">
-  <div class="row">
-    <div class="col-md-4">
-      <h1 id="testdhead">
-        Schedule a Test drive
-    </h1>
-    <p id="testdcont">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum odio vitae inventore impedit architecto libero, voluptatibus expedita autem eum incidunt quaerat nihil neque ex facere. Autem obcaecati mollitia ab explicabo.
-    </p>
-    <h1 id="testdhead2">
-        Auto Financing
-    </h1>
-    <p id="testdcont">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus accusamus dolorum nesciunt incidunt unde, iusto praesentium perspiciatis voluptatem ipsa aperiam in repellendus? A quasi eius, nam libero consectetur ea excepturi.
-    </p>
-    <h1 id="testdhead3">
-        Auto Service & Parts
-    </h1>
-    <p id="testdcont">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta a iste doloremque odit inventore magni in dignissimos animi facere natus, quae harum aliquam error! Aliquid dicta nam rem eum aspernatur?
-    </p>
-
-    </div>
-    <div class="col-md">
-      <table>
-        <tr>
-          <th>Company</th>
-          <th>Contact</th>
-          <th>Country</th>
-        </tr>
-        <tr>
-          <td>Alfreds Futterkiste</td>
-          <td>Maria Anders</td>
-          <td>Germany</td>
-        </tr>
-        <tr>
-          <td>Centro comercial Moctezuma</td>
-          <td>Francisco Chang</td>
-          <td>Mexico</td>
-        </tr>
-      </table>
-    </div>
-  </div>
-</div>   
+          <div class="container-fluid" style="padding-left: 0; padding-right: 0;">
+            <center>
+                <div class="mapouter"><div class="gmap_canvas"><iframe id="gmap_canvas" src="https://maps.google.com/maps?q=DACC&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br></div></div>
+            </center>
+          </div>
+        <div class="container content-lower">
+          <div class="row">
+            <div class="col-md-4">
+              <h1 id="testdhead">
+                Schedule a Test drive
+              </h1>
+              <p id="testdcont">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum odio vitae inventore impedit architecto libero, voluptatibus expedita autem eum incidunt quaerat nihil neque ex facere. Autem obcaecati mollitia ab explicabo.
+              </p>
+              <h1 id="testdhead2">
+                Auto Financing
+              </h1>
+              <p id="testdcont">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus accusamus dolorum nesciunt incidunt unde, iusto praesentium perspiciatis voluptatem ipsa aperiam in repellendus? A quasi eius, nam libero consectetur ea excepturi.
+              </p>
+              <h1 id="testdhead3">
+                Auto Service & Parts
+              </h1>
+              <p id="testdcont">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta a iste doloremque odit inventore magni in dignissimos animi facere natus, quae harum aliquam error! Aliquid dicta nam rem eum aspernatur?
+              </p>
+            </div>
+            <div class="col-md">
+              <table>
+                <tr>
+                  <th>Company</th>
+                  <th>Contact</th>
+                  <th>Country</th>
+                </tr>
+                <tr>
+                  <td>Alfreds Futterkiste</td>
+                  <td>Maria Anders</td>
+                  <td>Germany</td>
+                </tr>
+                <tr>
+                  <td>Centro comercial Moctezuma</td>
+                  <td>Francisco Chang</td>
+                  <td>Mexico</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>  
+      </div> 
     </body>
 </html>

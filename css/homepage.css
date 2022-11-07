@@ -9,16 +9,13 @@
 
 body {
     /* place the blurred image below the normal one */
-    background-image:
-      url("../images/PlaceHolderCars/Hyundai.jpg"),
-      url("../images/PlaceHolderCars/Hyundai\ \(1\).jpg");
-  
-    /* repeat only the blurred one */
-    background-repeat: no-repeat, repeat-x;
-  
+    /*
+    background-image:url("../images/PlaceHolderCars/Hyundai-resized.jpg");
     background-position: center, center;
-    background-size: 1300px;
+    background-size: contain;
     background-position: top;
+    background-repeat: no-repeat;
+    */
   }
 
   .cars {
