@@ -1,111 +1,58 @@
-<style>
-  * {box-sizing: border-box;}
-  body {font-family: Verdana, sans-serif;}
-  .mySlides {display: none;}
-  img {vertical-align: middle;}
-  
-  /* Slideshow container */
-  .slideshow-container {
-    max-width: 100px;
-    position: relative;
-    margin: auto;
-  }
-  
-  /* Caption text */
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
-  }
-  
-  .active {
-    background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .text {font-size: 11px}
-  }
-  </style>
-  </head>
-  <body>
-  
-  <div class="slideshow-container">
-  
-  <div class="mySlides fade">
-    <img src="images/CarBrandLogos/audi-logo.png" style="width:100%">
-  </div>
-  
-  <div class="mySlides fade">
-    <img src="images/CarBrandLogos/bmw-logo.png" style="width:100%">
-  </div>
-  
-  <div class="mySlides fade">
-    <img src="images/CarBrandLogos/cadillac-logo.png" style="width:100%">
-  </div>
-
-  <div class="mySlides fade">
-    <img src="images/CarBrandLogos/chevrolet-logo.png" style="width:100%">
-  </div>
-
-  </div>
-  <br>
-  
-  <div style="text-align:center">
-    <span class="dot"></span> 
-    <span class="dot"></span> 
-    <span class="dot"></span>
-    <span class="dot"></span>
-  </div>
-  
-  <script>
-  let slideIndex = 0;
-  showSlides();
-  
-  function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
-  }
-  </script>
-  
-  </body>
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Loan calculator-KalyanMishra (TutorialsPoint)</title>
+   <style>
+      .Loan_calcualtor{
+         width: 400px;
+         height: 550px;
+         background-color: black;
+         position: absolute;
+         left: 50%;
+         top: 50%;
+         transform: translateX(-50%) translateY(-50%);
+         padding: 20px 0px 0px 100px;
+         border-radius: 10px;
+         color: white;
+      }
+      p{
+         color: white;
+         font-size: 25px;
+         font-family: sans-serif;
+      }
+      h1{
+         color: royalblue;
+      }
+      input{
+         height: 33px;
+         width: 70%;
+         background-color: green;
+         font-size: 20px;
+         color: white;
+         padding: 7px;
+      }
+      #calculate_op{
+         color: white;
+         font-size: 20px;
+         width: 100px;
+         align-content: center;
+         margin-left:100px;
+         cursor: pointer;
+      }
+   </style>
+</head>
+<body>
+   
+   <script>
+      function calculate(){
+         amount=document.getElementById('amount').value
+         rate=document.getElementById('rate').value
+         time=document.getElementById('time').value
+         const interest = (amount * (rate * 0.01)) / time;
+         let emi = ((amount / time) + interest).toFixed(2);
+         emi = emi.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+         document.getElementById("output").innerHTML=emi
+      }
+   </script>
+</body>
+</html>
