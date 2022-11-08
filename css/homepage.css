@@ -44,34 +44,6 @@ body {
   height: 43%;
   padding: 40px;
 }
-#lowercontent{
-  padding: 8%;
-  padding-left: 10%;
-  width: 75%;
-}
-#testdhead{
-  width: 40%;
-}
-#testdhead2{
-  width: 35%;
-  padding-top: 5%;
-}
-#testdhead3{
-  width: 35%;
-  padding-top: 5%;
-}
-#testdcont{
-  width: 20%;
-  padding-top: .5%;
-
-}
-#schedule{
-  float: right;
-}
-
-#schedule, #testdhead2{
-  display: inline-block;
-}
 
 #gmap_canvas{
   overflow:hidden;
@@ -95,3 +67,9 @@ body {
 body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
 img {vertical-align: middle;}
+
+.bottom-text{
+  color: red;
+  text-align: left;
+  float: ;
+}
