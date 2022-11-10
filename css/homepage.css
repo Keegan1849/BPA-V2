@@ -7,7 +7,7 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-body {
+/*body {
     /* place the blurred image below the normal one */
     /*
     background-image:url("../images/PlaceHolderCars/Hyundai-resized.jpg");
@@ -15,8 +15,9 @@ body {
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
-    */
+    
   }
+*/
 
   .cars {
     width:1500px;

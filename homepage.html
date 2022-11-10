@@ -124,62 +124,29 @@
         <img style="width: 100%; height: 100%;" src="images/PlaceHolderCars/Hyundai-resized2.jpg">
       </div>
 
-      <div class="container-fluid" style="padding: 0; padding-top: 5%;">
-
         <!--START LOAN CALCULATOR-->
-        <div class="loan-calculator">
-          <div class="top">
-            <h2 class="loan-Header">Loan Calculator</h2>
-            <form action="#">
-              <div class="group">
-                <div class="header">Amount</div>
-                <input type="text" value="30000" class="loan-amount" />
-              </div>
-
-              <div class="group">
-                <div class="header">Interest Rate</div>
-                <input type="text" value="8.5" class="interest-rate" />
-              </div>
-    
-              <div class="group">
-                <div class="header">Tenure (in months)</div>
-                <input type="text" value="240" class="loan-tenure" />
-              </div>
-            </form>
+        <div class="container-fluid" style="padding-top: 3%; padding-bottom: 3%;">
+          <center>
+          <div class="Loan_calcualtor">
+            <h1>Loan Calculator </h1>
+            <p>Loan amount:
+               <input type="number" id="amount" placeholder="Enter amount..">
+            </p>
+            <p>Interest Rate:
+               <input step=".1" id="rate" placeholder="Enter rate..">
+            </p>
+            <p>Months:
+               <input type="number" id="time" placeholder="Enter time..">
+            </p>
+               <input type="button" value="Calculate" id="calculate_op" onclick="calculate()">
+           <p>Total EMI: $
+               <span style="font-weight: 20px; color: white;" id="output"></span>
+            </p>
           </div>
-    
-          <div class="result">
-            <div class="left">
-              <div class="loan-emi">
-                <h3>Loan EMI</h3>
-                <div class="value">123</div>
-              </div>
-    
-              <div class="total-interest">
-                <h3>Total Interest Payable</h3>
-                <div class="value">1234</div>
-              </div>
-    
-              <div class="total-amount">
-                <h3>Total Amount</h3>
-                <div class="value">12345</div>
-              </div>
-    
-              <button class="calculate-btn">Calculate</button>
-            </div>
-
-            <div class="right">
-              <canvas id="myChart" width="400" height="400"></canvas>
-            </div>
-
-          </div>
+          </center>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
-
         <!--END LOAN CALCULATOR-->
-        <br>
-        <br>
-        <br>
+
           <div class="container-fluid" style="padding-left: 0; padding-right: 0;">
             <center>
                 <div class="mapouter"><div class="gmap_canvas"><iframe id="gmap_canvas" src="https://maps.google.com/maps?q=DACC&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br></div></div>
@@ -188,7 +155,7 @@
         <div class="container" style="padding-top: 10%;">
           <div class="row">
             
-            <div class="col align-self-start bottom-text">
+            <div class="col-6 col-sm-6 bottom-text" style="padding-left: -100%;">
               
               <h1>
                 Schedule a Test drive
@@ -212,27 +179,52 @@
             
           </div>
         
-            <div class="col-md-6">
+            <div class="col-6 col-sm-6" style="padding-left: 20%;">
               <table>
                 <tr>
-                  <th>Company</th>
-                  <th>Contact</th>
-                  <th>Country</th>
+                  <th>Day</th>
+                  <th>Open</th>
+                  <th>Closed</th>
                 </tr>
                 <tr>
-                  <td>Alfreds Futterkiste</td>
-                  <td>Maria Anders</td>
-                  <td>Germany</td>
+                  <td>Monday</td>
+                  <td>0:00</td>
+                  <td>0:00</td>
+                  
                 </tr>
                 <tr>
-                  <td>Centro comercial Moctezuma</td>
-                  <td>Francisco Chang</td>
-                  <td>Mexico</td>
+                  <td>Tuesday</td>
+                  <td>0:00</td>
+                  <td>0:00</td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>0:00</td>
+                  <td>0:00</td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>0:00</td>
+                  <td>0:00</td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td>0:00</td>
+                  <td>0:00</td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td>0:00</td>
+                  <td>0:00</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td>0:00</td>
+                  <td>0:00</td>
                 </tr>
               </table>
             </div>
-          </div>
+          </div> 
         </div>
-      </div> 
     </body>
 </html>
