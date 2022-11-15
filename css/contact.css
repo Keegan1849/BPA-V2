@@ -32,15 +32,25 @@ position: relative;
 margin: auto;
 }
 
-#input{
-  width: 60%; 
-}
-
-.lbl{
+label{
+  font-size: 16px;
   font-weight: lighter;
   color: #717171;
+  width: 100%;
+}
+
+input{
+  width: 100%;
 }
 
 h1{
   color: #717171;
+}
+
+#form-left{
+  float: right;
+}
+
+#form-right{
+  float: left;
 }
