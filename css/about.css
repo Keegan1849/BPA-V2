@@ -1,0 +1,46 @@
+/* Content design */
+#content {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  .mystyle {
+  width: 100%;
+  padding: 25px;
+  background-color: coral;
+  color: white;
+  font-size: 25px;
+  box-sizing: border-box;
+  }
+  #tablecolor{
+  background-color: blue;
+  }
+  #bbox{
+  width: 70%;
+  height: 43%;
+  padding: 40px;
+  }
+  
+  * {box-sizing: border-box}
+  body {font-family: Verdana, sans-serif; margin:0}
+  .mySlides {display: none}
+  img {vertical-align: middle;}
+  
+  /* Slideshow container */
+  .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  }
+  
+  #input{
+    width: 60%; 
+  }
+  
+  .lbl{
+    font-weight: lighter;
+    color: #717171;
+  }
+  
+  h1{
+    color: #717171;
+  }

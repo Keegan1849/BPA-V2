@@ -19,29 +19,6 @@ width: 70%;
 height: 43%;
 padding: 40px;
 }
-#lowercontent{
-padding: 8%;
-padding-left: 10%;
-width: 75%;
-}
-#testdhead{
-width: 35%;
-}
-#testdhead2{
-width: 35%;
-padding-top: 5%;
-}
-#testdhead3{
-width: 35%;
-padding-top: 5%;
-}
-#testdcont{
-width: 42%;
-padding-top: .5%;
-}
-#schedule{
-float: right;
-}
 
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
