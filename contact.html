@@ -19,18 +19,9 @@
       <!--START NAVBAR-->
       <div class="navbar2">
         <a href="contact.html" style="padding-right: 4%;">CONTACT</a>
-        <a href="homepage.html#gmap_canvas" style="padding-right: 1.5%;">MAP</a>
-        <img src="/images/marker-removebg-preview-removebg-preview.png" width="20px" style="float: right; margin-top: 5px;">
-        <a style="padding-right: 1.5%;">(000)-000-0000</a>
-        <!--<a><img src="images/marker-removebg-preview-removebg-preview.png" width="20px"></a>-->
-      </div>
-
-      <div class="navbar2">
-        <a href="contact.html" style="padding-right: 4%;">CONTACT</a>
-        <a href="#gmap_canvas" style="padding-right: 1.5%;">MAP</a>
-        <img src="/images/marker-removebg-preview-removebg-preview.png" width="20px" style="float: right; margin-top: 5px;">
+        <a href="homepage.html #gmap_canvas" style="padding-right: 1.5%;">MAP</a>
+        <img src="/images/revised-point.png" width="20px" style="float: right; margin-top: 5px;">
         <a style="padding-right: 1.5%; color: #717171;">(000)-000-0000</a>
-        <!--<a><img src="images/marker-removebg-preview-removebg-preview.png" width="20px"></a>-->
       </div>
 
         <div id="navlist">
@@ -105,40 +96,43 @@
 
         <div id="content" class="container" style="padding-top: 10%;">
           <div class="row">
-            <div class="col-md-6">
-              <form id="input">
-                <label class="lbl" for="fname">First Name</label>
-                <input type="text" required />
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+              <form id="form-left">
+                <label for="fname">First Name</label>
+                <input style="margin-bottom: 10%;" type="text" required />
   
-                <label class="lbl" for="email">Email</label>
-                <input type="email" required name="email">
-  
-                <label class="lbl" for="phone">Phone Number</label>
-                <input type="tel" required name="phone" maxlength="9" minlength="9">
-                <br>
-                <label class="lbl" for="zip">Zip Code</label>
-                <input type="text" required minlength="5" maxlength="5"/>
+                <label for="email">Email</label>
+                <input style="margin-bottom: 10%;" type="email" required name="email">
+
+                <label for="zip">Zip Code</label>
+                <input style="margin-bottom: 10%;" type="text" required minlength="5" maxlength="5"/>
               </form>
             </div>
             
             <div class="col-2"></div>
 
-            <div class="col-md-6">
-              <form id="input">
-                <label class="lbl" for="lname">Last Name</label>
-                <input type="text" required/>
-                <br>
-                <label class="lbl" for="email">Email</label>
-                <input type="email" required name="email">
+            <div class="col-md-4">
+              <form id="form-right">
+                <label for="lname">Last Name</label>
+                <input style="margin-bottom: 10%;" type="text" required/>
   
-                <label class="lbl" for="phone">Phone Number</label>
-                <input type="tel" required name="phone" maxlength="9" minlength="9">
-                <br>
-                <label class="lbl" for="zip">Zip Code</label>
-                <input type="text" required minlength="5" maxlength="5"/>
-                <input type="submit"
+                <label for="phone">Phone Number</label>
+                <input style="margin-bottom: 10%;" type="tel" required name="phone" maxlength="9" minlength="9">
               </form>
             </div>
+          </div>
+
+          <div class="col-md-1"></div>
+
+          <div class="row">
+              <form id="form-left">
+                <center>
+                <label for="fname">Comments:</label>
+                <input style="width: 65%; height: 100%; margin-bottom: 5%;" type="text" required /><br>
+                <input style="width: 7%; margin-bottom: 12%; background-color: #318481; border-radius: 10%; border-width: 1px; color: white; font-weight: lighter; font-size: medium;" value="SEND" type="submit"/>
+                </center>
+              </form>
           </div>
         </div>
     </body>
