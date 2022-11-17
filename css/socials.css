@@ -14,10 +14,11 @@
   .navbar2 a {
     color: #717171;
     float: right;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 18;
     margin-top: 2px;
     text-decoration: none;
+    font-weight: bold;
   }
   
   /* Change background on mouse-over */

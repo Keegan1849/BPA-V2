@@ -28,7 +28,8 @@ body {
     font-size: 19px;
     line-height: 25px;
     border-radius: 4px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
     /*background-color: rgb(129, 129, 129);*/
 }
 
