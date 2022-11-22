@@ -1,7 +1,7 @@
 /* The navigation bar */
 .navbar2 {
     overflow: hidden;
-    background-color: #ffffff;
+    background-color: white;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
@@ -23,7 +23,7 @@
   
   /* Change background on mouse-over */
   .navbar2 a:hover {
-    color: rgb(255, 255, 255);
+    color: #a7a7a7;
   }
 
   /*Teal Color Code 00A79D*/

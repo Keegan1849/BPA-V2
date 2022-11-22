@@ -4,44 +4,66 @@
    <title>Loan calculator-KalyanMishra (TutorialsPoint)</title>
    <style>
       .Loan_calcualtor{
-         width: 400px;
-         height: 550px;
-         background-color: black;
-         position: absolute;
-         left: 50%;
-         top: 50%;
-         transform: translateX(-50%) translateY(-50%);
-         padding: 20px 0px 0px 100px;
+         width: 75%;
+         height: 30%;
+         background-color: #717171;
          border-radius: 10px;
          color: white;
+         border: 3px solid black;
       }
       p{
-         color: white;
+         color: black;
          font-size: 25px;
-         font-family: sans-serif;
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: left;
       }
       h1{
-         color: royalblue;
+         color: white;
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 50px;
       }
       input{
-         height: 33px;
-         width: 70%;
-         background-color: green;
+         height: 10%;
+         width: 50%;
+         background-color: white;
          font-size: 20px;
-         color: white;
+         color: black;
          padding: 7px;
       }
       #calculate_op{
-         color: white;
+         color: black;
          font-size: 20px;
-         width: 100px;
+         width: 20%;
          align-content: center;
          margin-left:100px;
          cursor: pointer;
+         text-align: left;
       }
    </style>
 </head>
 <body>
+   <div class="container-fluid" style="padding-top: 3%; padding-bottom: 3%;">
+      <center>
+      <div class="Loan_calcualtor">
+         <div style="background-color: black; position: relative;">
+            <h1>LOAN CALCULATOR</h1>
+         </div>
+         <p>Loan amount:
+            <input type="number" id="amount" placeholder="Enter Amount">
+         </p>
+         <p>Interest Rate:
+            <input step=".1" id="rate" placeholder="Enter Rate">
+         </p>
+         <p>Months:
+            <input type="number" id="time" placeholder="Enter Time" style="font-family: Arial, Helvetica, sans-serif;">
+         </p>
+            <input type="button" value="Calculate" id="calculate_op" onclick="calculate()">
+         <p>Total EMI: $
+            <span style="font-weight: 20px; color: white;" id="output"></span>
+         </p>
+      </div>
+      </center>
+    </div>
    
    <script>
       function calculate(){
