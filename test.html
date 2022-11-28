@@ -4,23 +4,23 @@
    <title>Loan calculator-KalyanMishra (TutorialsPoint)</title>
    <style>
       .Loan_calcualtor{
-         width: 75%;
-         height: 30%;
-         background-color: #717171;
+         width: 40%;
+         background-color: #f7f7f7;
          border-radius: 10px;
          color: white;
-         border: 3px solid black;
+         border-collapse: separate; border-spacing: 5 .8em; border-radius: 15px; background-color: #F7F7F7; box-shadow:#717171;box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
       }
       p{
          color: black;
          font-size: 25px;
          font-family: Arial, Helvetica, sans-serif;
          text-align: left;
+         margin-left: 15%;
       }
       h1{
          color: white;
          font-family: Arial, Helvetica, sans-serif;
-         font-size: 50px;
+         font-size: 50px;         
       }
       input{
          height: 10%;
@@ -28,42 +28,43 @@
          background-color: white;
          font-size: 20px;
          color: black;
-         padding: 7px;
+         padding: 1%;
+         float: right;
+         margin-right: 15%;
       }
       #calculate_op{
          color: black;
          font-size: 20px;
          width: 20%;
          align-content: center;
-         margin-left:100px;
          cursor: pointer;
          text-align: left;
       }
    </style>
 </head>
 <body>
-   <div class="container-fluid" style="padding-top: 3%; padding-bottom: 3%;">
       <center>
       <div class="Loan_calcualtor">
-         <div style="background-color: black; position: relative;">
+         <div style="padding-top: 1px; padding-bottom: 1px; background-color: #318481;">
             <h1>LOAN CALCULATOR</h1>
          </div>
-         <p>Loan amount:
-            <input type="number" id="amount" placeholder="Enter Amount">
-         </p>
-         <p>Interest Rate:
-            <input step=".1" id="rate" placeholder="Enter Rate">
-         </p>
-         <p>Months:
-            <input type="number" id="time" placeholder="Enter Time" style="font-family: Arial, Helvetica, sans-serif;">
-         </p>
-            <input type="button" value="Calculate" id="calculate_op" onclick="calculate()">
-         <p>Total EMI: $
-            <span style="font-weight: 20px; color: white;" id="output"></span>
-         </p>
+         <div>
+            <p>Loan amount:
+               <input style="border-width: 1px; border-color: #717171; border-style: solid;" type="number" id="amount" placeholder="Enter Amount">
+            </p>
+            <p>Interest Rate:
+               <input style="border-width: 1px; border-color: #717171; border-style: solid;" step=".1" id="rate" placeholder="Enter Rate">
+            </p>
+            <p>Months:
+               <input type="number" id="time" placeholder="Enter Time" style="font-family: Arial, Helvetica, sans-serif; border-width: 1px; border-color: #717171; border-style: solid;">
+            </p>
+               <input style="margin-right: 13%; border-width: 1px; border-color: #717171; border-style: solid;" type="button" value="Calculate" id="calculate_op" onclick="calculate()">
+            <p style="padding-bottom: 5%;">Total EMI: $
+               <span style="font-weight: 20px; color: black; border-width: 1px; border-color: #717171; border-style: solid;" id="output"></span>
+            </p>
+         </div>
       </div>
       </center>
-    </div>
    
    <script>
       function calculate(){
