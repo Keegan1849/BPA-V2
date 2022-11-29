@@ -3,7 +3,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Motors Unlimited</title>
-        <link rel="stylesheet" href="/css/about.css">
+        <link rel="stylesheet" href="/css/inventory.css">
         <link rel="stylesheet" href="/css/slider.css">
         <link rel="stylesheet" href="/css/navbar.css">
         <link rel="stylesheet" href="/css/socials.css">
@@ -16,9 +16,6 @@
 
     </head>
     <body style="background-color: #F7F7F7;">
-
-        <!--THIS IS A TESTING PAGE/IT IS NOT USED IN THE ACTIVE WEB PAGE-->
-
       <!--START NAVBAR-->
       <div class="navbar2">
         <a href="contact.html" style="padding-right: 4%;">CONTACT</a>
@@ -89,13 +86,42 @@
             </script>
           
               <a href="homepage.html"><img id="logo" src="images/logos/BPA logo.png"></a>
-              <a style="padding-left: 20px; margin-top: 2px;" href="inventory.html">Inventory</a>
+              <a style="padding-left: 20px; margin-top: 2px;" href="inventory.php">Inventory</a>
               <a style="padding-left: 20px; margin-top: 2px;" href="service.html">Service</a>
-              <a style="padding-left: 20px; margin-top: 2px;" href="about.html">About</a>    
             </div>
         </div>
         <!--END NAVBAR-->
-        </div>  
+        
+        <div class="container-fluid" style="padding: 0;">
+            <div class="row">
+                <div class="col-2 search">
+                    <div class="container-fluid" style="padding: 0;">
+                        <div id="search-head" class="row" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
+                            <center>
+                                <h1 style="font-weight: bold; padding-top: 5px; padding-bottom: 5px;">Search</h1>
+                            </center>
+                        </div>
+                        <div class="row selector-row">
+                            <center>
+                                <select id="selectors">
+                                    <option style="font-family:Arial, Helvetica, sans-serif;" value="" disabled selected hidden>Make</option>
+                                    <option value="volv">Volvo</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="opel">Opel</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </center>
+                        </div>
+                        <div class="row">
+
+                        </div>
+                        <div class="row">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </body>
 </html>

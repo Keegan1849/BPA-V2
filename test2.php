@@ -20,6 +20,8 @@
     </head>
     <body>
 
+            <!--THIS IS A TESTING PAGE/IT IS NOT USED IN THE ACTIVE WEB PAGE-->
+
     <div class="navbar2">
         <a href="" style="padding-right: 4%;">CONTACT</a>
         <a href="#gmap_canvas" style="padding-right: 1.5%;">MAP</a>

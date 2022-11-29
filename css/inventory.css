@@ -1,80 +1,48 @@
 /* Content design */
-.content {
-    margin-top:150px;
-    padding:15px 15px 575px;
-    font-size:22px;
-    font-weight: lighter;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+#content {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    /* place the blurred image below the normal one */
-    background-image:v;
-      
-  
-    /* repeat only the blurred one */
-    background-repeat: no-repeat, repeat-x;
-  
-    background-position: center, center;
-    background-size: 1350px;
-    background-position: top;
-  }
-
-  .cars {
-    width:1500px;
-    margin-left: 350px;
-    margin-top: -950px;
+/* Slideshow container */
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin: auto;
 }
 
-.carbox{
-    background-color: #a5a5a5;
-
+.search{
+  background-color: white;
+  padding-top: 90px;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.mystyle {
-  width: 100%;
-  padding: 25px;
-  background-color: coral;
+
+#search-head{
+  background-color: black;
   color: white;
-  font-size: 25px;
-  box-sizing: border-box;
+  padding-top: 1px;
+  padding-left: 1px;
+  font-family: Arial, Helvetica, sans-serif;
 }
-#tablecolor{
-  background-color: blue;
+
+.selector-row{
+  padding-top: 20%;
+  padding-bottom: 10%;
 }
-#bbox{
-  width: 70%;
-  height: 43%;
-  background-color: rgb(77, 71, 139);
-  padding: 40px;
+
+#selectors{
+  height: 50px;
+  width: 50%;
+  text-align-last: center;
+  border-color: #318481;
+  border-width: 2px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
-#bigContent{
-  background-color: aqua;
+
+option{
+  font-family: Arial, Helvetica, sans-serif;
 }
-#smallerbox{
-  width: 20%;
-  height: 125px;
-  margin-top:150px;
-  margin-left: 100px;
-  padding: 20px;
-}
-#smallerboxA{
-  width: 500px;
-  margin-left: 125px;
-}
-#gmap_canvas{
-  overflow:hidden;
-  background:none!important;
-  height: 100%;
-  width: 100%;
-}
-.mapouter{
-  position:relative;
-  height: 100%;
-  width: 100%;
-}
-.gmap_canvas{
-  overflow:hidden;
-  background:none!important;
-  height: 100%;
-  width: 100%;
+
+:focus{
+  outline: none;
 }
