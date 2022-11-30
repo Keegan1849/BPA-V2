@@ -103,8 +103,8 @@
                         </div>
                         <div class="row selector-row">
                             <center>
-                                <select id="selectors">
-                                    <option style="font-family:Arial, Helvetica, sans-serif;" value="" disabled selected hidden>Make</option>
+                                <select id="selectors" style="padding-right: 10%; background-image: url(images/dropdown.png); background-repeat: no-repeat, repeat; background-position: right 1.5em top 50%, 0 0; background-size: 15%; font-weight: bold;">
+                                    <option value="" disabled selected hidden>Make</option>
                                     <option value="volv">Volvo</option>
                                     <option value="saab">Saab</option>
                                     <option value="opel">Opel</option>
