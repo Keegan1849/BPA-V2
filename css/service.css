@@ -112,7 +112,6 @@
     display: inline-block;
     text-align: center;
     border: 5px solid #6A6A6A;
-    padding: 5%;
     margin: 0 auto;
     justify-content: space-between;
 
@@ -143,4 +142,34 @@ p {
 #img{
   margin-top: 0;
    width: 100%;
+}
+#serviceWords{
+  text-align: center;
+  margin: 0, 0, 0, 0;
+  width: 40%;
+  font-size: x-large;
+
+}
+#HERE{
+  text-align: center;
+  margin-right: 50%;
+}
+#Engine{
+  margin-top: 20%;
+  width: 50%;
+}
+#Battery{
+  margin-top: 20%;
+  width: 50%;
+}
+#Wheel{
+  width: 40%;
+  margin-top: 20%;
+}
+#Paint{
+  margin-top: 20%;
+  width: 20%;
+}
+#ServC{
+  padding: 10%;
 }
