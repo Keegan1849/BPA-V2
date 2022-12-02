@@ -55,7 +55,7 @@
 .mapouter{
   position:relative;
   height: 10%;
-  width: 10%;
+  width: 100%;
   z-index: -10;
 }
 .gmap_canvas{
@@ -70,21 +70,12 @@ body {font-family: Verdana, sans-serif; margin:0}
 img {vertical-align: middle;}
 
 .bottom-text{
-  color: red;
   text-align: left;
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
 }
 #Calender{
   font-size: 50px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.desc-text{
-  color: #717171;
-  font-size: 17px;
-  margin-bottom: 20%;
-  text-align: left;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -154,4 +145,38 @@ img {vertical-align: middle;}
   font-family: Arial, Helvetica, sans-serif;
   font-size: 50px;
   font-weight: bold;
+}
+
+.very-bottom h1{
+  color: #717171;
+  padding-bottom: 1%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.very-bottom-desc-text{
+  color: #717171;
+  font-size: 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.desc-text{
+  font-size: 17px;
+  margin-bottom: 20%;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #717171;
+}
+
+.desc-text2{
+  color: white;
+  font-size: 17px;
+  margin-bottom: 20%;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mid-box{
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
 }
