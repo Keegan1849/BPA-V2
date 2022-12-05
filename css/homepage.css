@@ -180,3 +180,10 @@ img {vertical-align: middle;}
   font-family: Arial, Helvetica, sans-serif;
   color: black;
 }
+
+.bot-full-color{
+  background-color: #318481;
+  text-align: left;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
