@@ -106,8 +106,8 @@
     font-weight: bold;
   }
   #TAG{
-    height: 100%;
-    width: 15%;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
     display: inline-block;
     text-align: center;
@@ -118,12 +118,9 @@
   }
 #sBox{
   margin: 0;
-  border-radius: 5%;
   font-size: 40px;
   border: #6A6A6A;
-  background-color: aqua;
-  width: 100%;
-  padding: auto;
+  height: 300px;
 }
 span {
   border-radius: 15px;
@@ -155,21 +152,24 @@ p {
   margin-right: 50%;
 }
 #Engine{
-  margin-top: 20%;
+  margin-top: 35%;
   width: 50%;
 }
 #Battery{
-  margin-top: 20%;
+  margin-top: 35%;
   width: 50%;
 }
 #Wheel{
   width: 40%;
-  margin-top: 20%;
+  margin-top: 35%;
 }
 #Paint{
-  margin-top: 20%;
+  margin-top: 35%;
   width: 20%;
 }
 #ServC{
   padding: 10%0;
+}
+h2{
+  padding: 2.5%;
 }
