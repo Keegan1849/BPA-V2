@@ -97,7 +97,7 @@
             $servername = "localhost:3306";
             $username = "root";
             $password = "password";
-            $database = "bpa";
+            $database = "vehicle";
 
             // Create connection
             $conn = new mysqli($servername, $username, $password, $database);
@@ -110,7 +110,7 @@
                     ?>
                     <a href="viewModel.php?id=<?=$row["id"]?>" border="0">
                         <div class="flex-item">
-                            <img src="uploads/<?=$row["image"]?>"><br>
+                            <img src="images/cars/<?=$row["image"]?>"><br>
                             <span class="f1"><?=$row["make"]?></span><br>
                             <span class="f1"><?=$row["model"]?></span><br>
                             <span class="f2"><?=$row["ext_color"]?></span>

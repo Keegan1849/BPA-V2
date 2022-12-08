@@ -152,10 +152,7 @@ p {
   font-size: x-large;
 
 }
-#HERE{
-  text-align: center;
-  margin-right: 50%;
-}
+
 #Engine{
   margin-top: 35%;
   width: 50%;
@@ -173,6 +170,5 @@ p {
   width: 20%;
 }
 h2{
-  padding-top: 2.5%;
-  margin-right: 2.5%;
+  padding: 2.5%;
 }
