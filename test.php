@@ -91,56 +91,39 @@
             </div>
         </div>
         <!--END NAVBAR-->
-        </div>
-        <?php
-          $servername = "localhost:3306";
-          $username = "root";
-          $password = "password";
-          $database = "bpa";
+        <div class="flex-container" style="margin-top: 300px;">
+          <?php
 
-          // Create connection
-          $conn = new mysqli($servername, $username, $password, $database);
+            $servername = "localhost:3306";
+            $username = "root";
+            $password = "password";
+            $database = "bpa";
 
-            if ($conn->connect_error) {
-              die("Connection failed: " . $conn->connect_error);
-            }else{
-            
-            $sql = "SELECT * FROM car";
+            // Create connection
+            $conn = new mysqli($servername, $username, $password, $database);
+
+            $sql = "SELECT * FROM vehicle";
             $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {
-              // output data of each row
-              echo "<table border=1 width=500>";
-              echo "<tr><td colspan=3>Car List</td></tr>";
-              echo "<tr><td>Make</td><td>Model</td><td>Image</td></tr>";
-            
-            while($row = $result->fetch_assoc()) {
-              echo "<tr><td>" . $row["make"]. "</td><td>" . $row["model"]. "</td><td><img src=".$row["image"]."></td>";
+              while($row = $result->fetch_assoc()) {
+                    ?>
+                    <a href="viewModel.php?id=<?=$row["id"]?>" border="0">
+                        <div class="flex-item">
+                            <img src="uploads/<?=$row["image"]?>"><br>
+                            <span class="f1"><?=$row["make"]?></span><br>
+                            <span class="f1"><?=$row["model"]?></span><br>
+                            <span class="f2"><?=$row["ext_color"]?></span>
+                        </div>
+                    </a>    
+                    <?php
+              }
+            } else {
+              echo "0 Results";
             }
             echo "</table>";
-            } else {
-              echo "0 Cars currently in the database.<br><br>";
-            }
-            }
             $conn->close();
-        ?>
-        <form action="test.php" method="post" style="margin-top: 500px;">
-          <table border = "1">
-            <tr>
-              <td colspan="2">Add a Car to the Database!</td>
-            </tr>
-            <tr>   
-              <td>Car Make:</td>        
-              <td><input type="text" name="make"></td>
-            </tr>
-            <tr>   
-              <td>Car Model:</td>        
-              <td><input type="text" name="model"></td>
-            </tr>   
-            <tr>
-              <td colspan="2"><input type="submit"></td>
-            </tr>
-          </table> 
-        </form>
+          ?>  
+        </div>
     </body>
 </html>
