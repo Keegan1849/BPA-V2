@@ -102,18 +102,18 @@
             // Create connection
             $conn = new mysqli($servername, $username, $password, $database);
 
-            $sql = "SELECT * FROM vehicle";
+            $sql = "SELECT * FROM vehicle;";
             $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {
               while($row = $result->fetch_assoc()) {
                     ?>
-                    <a href="viewModel.php?id=<?=$row["id"]?>" border="0">
+                    <a href="viewModel.php?id=<?=$row["vehicle_id"]?>" border="0">
                         <div class="flex-item">
-                            <img src="uploads/<?=$row["image"]?>"><br>
-                            <span class="f1"><?=$row["make"]?></span><br>
-                            <span class="f1"><?=$row["model"]?></span><br>
-                            <span class="f2"><?=$row["ext_color"]?></span>
+                            <img src="images/cars/<?=$row["vehicle_img"]?>"><br>
+                            <span class="f1"><?=$row["vehicle_make"]?></span><br>
+                            <span class="f1"><?=$row["vehicle_model"]?></span><br>
+                            <span class="f2"><?=$row["vehicle_extcolor"]?></span>
                         </div>
                     </a>    
                     <?php
