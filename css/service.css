@@ -1,4 +1,5 @@
-/* Content design */
+
+ /* Content design */
 #content {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
@@ -120,7 +121,11 @@
   margin: 0;
   font-size: 40px;
   border: #6A6A6A;
-  height: 300px;
+  background-color: #318481;
+  width: 100%;
+  padding: auto;
+  width: 500px;
+  height: 265px;
 }
 span {
   border-radius: 15px;
@@ -167,9 +172,7 @@ p {
   margin-top: 35%;
   width: 20%;
 }
-#ServC{
-  padding: 10%0;
-}
 h2{
-  padding: 2.5%;
+  padding-top: 2.5%;
+  margin-right: 2.5%;
 }
