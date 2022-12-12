@@ -56,3 +56,28 @@ select {
 select::-ms-expand {
   display: none;
 }
+
+.flex-container{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  -ms-flex-wrap:wrap;
+}
+.flex-item{
+  border: 1px solid #ccc; 
+  margin: 5px;
+  width: 300px;
+  font-family: verdana;
+  font-size: 14px;
+  color: black;
+}
+.f1{
+  font-family: verdana;
+  font-size: 16pt;
+  color: blue; 
+}
+.f2{
+  font-family: verdana;
+  font-size: 10pt;
+  color: grey; 
+}

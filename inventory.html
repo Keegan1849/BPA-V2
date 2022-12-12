@@ -108,7 +108,40 @@
             </div>
 
 
+            <div class="flex-container" style="margin-top: 300px;">
+          <?php
 
+            $servername = "localhost:3306";
+            $username = "root";
+            $password = "password";
+            $database = "bpa";
+
+            // Create connection
+            $conn = new mysqli($servername, $username, $password, $database);
+
+            $sql = "SELECT * FROM vehicle;";
+            $result = $conn->query($sql);
+
+            if ($result->num_rows > 0) {
+              while($row = $result->fetch_assoc()) {
+                    ?>
+                    <a href="viewModel.php?id=<?=$row["vehicle_id"]?>" border="0">
+                        <div class="flex-item">
+                            <img src="/images/cars/<?=$row["vehicle_img"]?>"><br>
+                            <span class="f1"><?=$row["vehicle_make"]?></span><br>
+                            <span class="f1"><?=$row["vehicle_model"]?></span><br>
+                            <span class="f2"><?=$row["vehicle_extcolor"]?></span>
+                        </div>
+                    </a>    
+                    <?php
+              }
+            } else {
+              echo "0 Results";
+            }
+            echo "</table>";
+            $conn->close();
+          ?>  
+        </div>
 
         </div>
     </body>
