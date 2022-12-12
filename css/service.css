@@ -1,4 +1,6 @@
-
+ body{
+  background-color:  #F7F7F7;
+ }
  /* Content design */
 #content {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -50,35 +52,34 @@
     padding: 10px;
     margin: 0;
     border-radius: 5%;
-    font-size: 40px;
+    font-size: 35px;
     font-family: Arial, Helvetica, sans-serif;
   }
   #T-Box{
     padding: 10px;
     margin: 0;
     border-radius: 5%;
-    font-size: 40px;
+    font-size: 35px;
     font-family: Arial, Helvetica, sans-serif;
   }
   #W-Box{
     padding: 10px;
     margin: 0;
     border-radius: 5%;
-    font-size: 40px;
+    font-size: 35px;
     font-family: Arial, Helvetica, sans-serif;
   }
   #TH-Box{
     padding: 10px;
     margin: 0;
     border-radius: 5%;
-    font-size: 40px;
+    font-size: 35px;
     font-family: Arial, Helvetica, sans-serif;
   }
   #F-Box{
     padding: 10px;
     margin: 0;
-    border-radius: 5%;
-    font-size: 40px;
+    font-size: 35px;
     font-family: Arial, Helvetica, sans-serif;
   }
   
@@ -86,7 +87,7 @@
     padding: 10px;
     margin: 0;
     border-radius: 5%;
-    font-size: 40px;
+    font-size: 35px;
     font-family: Arial, Helvetica, sans-serif;
   
   }
@@ -94,7 +95,7 @@
     padding: 10px;
     margin: 0;
     border-radius: 5%;
-    font-size: 40px;
+    font-size: 35px;
     font-family: Arial, Helvetica, sans-serif;
   }
   
@@ -102,7 +103,7 @@
     padding: 10px;
     margin: 0;
     border-radius: 5%;
-    font-size: 40px;
+    font-size: 35px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
   }
@@ -112,15 +113,14 @@
     border-radius: 50%;
     display: inline-block;
     text-align: center;
-    border: 5px solid #6A6A6A;
     margin: 0 auto;
     justify-content: space-between;
-
+    background-color: #ffff;
   }
 #sBox{
   margin-left: 10;
   font-size: 40px;
-  border: #6A6A6A;
+  border: #ffff;
   background-color: #318481;
   padding: auto;
   width: 1000px;
@@ -149,23 +149,25 @@ p {
   margin: 0, 0, 0, 0;
   width: 600px;
   font-size: x-large;
+  padding: 2.5%;
 }
 #Engine{
   margin-top: 35%;
   width: 50%;
+  background-color: #ffff;
 }
 #Battery{
   margin-top: 35%;
   width: 50%;
+  background-color: #ffff;
 }
 #Wheel{
   width: 40%;
   margin-top: 35%;
+  background-color: #ffff;
 }
 #Paint{
   margin-top: 35%;
-  width: 20%;
-}
-h2{
-  padding: 2.5%;
+  width: 25%;
+  background-color: #ffff;
 }
