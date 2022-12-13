@@ -121,7 +121,7 @@
                     </div>
                 </div>
                 <div class="col-10">
-                  <div class="flex-container" style="margin-top: 175px;">
+                  <div class="flex-container" style="margin-top: 125px;">
                     <?php
           
                       $servername = "localhost:3306";
@@ -139,7 +139,7 @@
                         while($row = $result->fetch_assoc()) {
                               ?>
                               <a style="text-decoration: none;" href="viewModel.php?id=<?=$row["vehicle_id"]?>" border="0">
-                                  <div class="flex-item" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+                                  <div class="flex-item" style="box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;">
 
                                       <img style="width: 275px; border-radius: 10px 10px 0 0; padding-bottom: 10px;" src="/images/cars/<?=$row["vehicle_img"]?>">
                                       <center>
@@ -147,7 +147,16 @@
                                         <span class="f2"><?=$row["vehicle_make"]?></span>
                                         <span class="f3"><?=$row["vehicle_model"]?></span>
                                       </center>
-                                      <span style="color: #717171;">ext:</span><div style="height: 10px; width: 10px; background-color: <?=$row["vehicle_make"]?>;"></div>
+                                      <span class="f4">Ext:</span><div class="f4-div" style="background-color: <?=$row["vehicle_extcolor"]?>;"></div><br>
+                                      <span class="f5">Int:</span><div class="f5-div" style="background-color: <?=$row["vehicle_intcolor"]?>;"></div>
+                                      <center>
+                                        <span class="f6">$<?=number_format($row["vehicle_price"])?></span>
+                                      </center>
+                                      <center>
+                                        <div class="go-to">
+                                          <h1 class="go-to-h1">Get Sale Price</h1>
+                                        </div>
+                                      </center>
                                   </div>
                               </a>    
                               <?php
