@@ -120,43 +120,47 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-10">
+                  <div class="flex-container" style="margin-top: 175px;">
+                    <?php
+          
+                      $servername = "localhost:3306";
+                      $username = "root";
+                      $password = "password";
+                      $database = "bpa";
+          
+                      // Create connection
+                      $conn = new mysqli($servername, $username, $password, $database);
+          
+                      $sql = "SELECT * FROM vehicle;";
+                      $result = $conn->query($sql);
+          
+                      if ($result->num_rows > 0) {
+                        while($row = $result->fetch_assoc()) {
+                              ?>
+                              <a style="text-decoration: none;" href="viewModel.php?id=<?=$row["vehicle_id"]?>" border="0">
+                                  <div class="flex-item" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+
+                                      <img style="width: 275px; border-radius: 10px 10px 0 0; padding-bottom: 10px;" src="/images/cars/<?=$row["vehicle_img"]?>">
+                                      <center>
+                                        <span class="f1"><?=$row["vehicle_year"]?></span>
+                                        <span class="f2"><?=$row["vehicle_make"]?></span>
+                                        <span class="f3"><?=$row["vehicle_model"]?></span>
+                                      </center>
+                                      <span style="color: #717171;">ext:</span><div style="height: 10px; width: 10px; background-color: <?=$row["vehicle_make"]?>;"></div>
+                                  </div>
+                              </a>    
+                              <?php
+                        }
+                      } else {
+                        echo "0 Results";
+                      }
+                      echo "</table>";
+                      $conn->close();
+                    ?>  
+                  </div>
+                </div>
             </div>
         </div>
-
-        <div class="flex-container" style="margin-top: 300px;">
-          <?php
-
-            $servername = "localhost:3306";
-            $username = "root";
-            $password = "password";
-            $database = "bpa";
-
-            // Create connection
-            $conn = new mysqli($servername, $username, $password, $database);
-
-            $sql = "SELECT * FROM vehicle;";
-            $result = $conn->query($sql);
-
-            if ($result->num_rows > 0) {
-              while($row = $result->fetch_assoc()) {
-                    ?>
-                    <a href="viewModel.php?id=<?=$row["vehicle_id"]?>" border="0">
-                        <div class="flex-item">
-                            <img style="width: 100px;" src="/images/cars/<?=$row["vehicle_img"]?>"><br>
-                            <span class="f1"><?=$row["vehicle_make"]?></span><br>
-                            <span class="f1"><?=$row["vehicle_model"]?></span><br>
-                            <span class="f2"><?=$row["vehicle_extcolor"]?></span>
-                        </div>
-                    </a>    
-                    <?php
-              }
-            } else {
-              echo "0 Results";
-            }
-            echo "</table>";
-            $conn->close();
-          ?>  
-        </div>
-
     </body>
 </html>

@@ -64,20 +64,33 @@ select::-ms-expand {
   -ms-flex-wrap:wrap;
 }
 .flex-item{
-  border: 1px solid #ccc; 
-  margin: 5px;
-  width: 300px;
-  font-family: verdana;
+  margin: 40px;
+  width: 275px;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
-  color: black;
+  border-radius: 10px;
 }
 .f1{
-  font-family: verdana;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 16pt;
-  color: blue; 
+  color: #717171;
 }
 .f2{
-  font-family: verdana;
-  font-size: 10pt;
-  color: grey; 
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16pt;
+  color: #717171;
+}
+.f3{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16pt;
+  color: #717171;
+}
+.f4{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16pt;
+  color: #717171;
+}
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
 }
