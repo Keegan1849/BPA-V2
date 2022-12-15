@@ -12,6 +12,11 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
         <script src="/javascript/nav.js"></script>
 
     </head>
@@ -94,32 +99,45 @@
         
         <div class="container-fluid" style="padding: 0;">
             <div class="row">
-                <div class="col-2 search">
-                    <div class="container-fluid" style="padding: 0;">
-                        <div id="search-head" class="row" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
-                            <center>
-                                <h1 style="font-weight: bold; padding-top: 5px; padding-bottom: 5px;">Search</h1>
-                            </center>
-                        </div>
-                        <div class="row selector-row">
-                            <center>
-                                <select id="selectors" style="padding-right: 10%; background-image: url(images/dropdown.png); background-repeat: no-repeat, repeat; background-position: right 1.5em top 50%, 0 0; background-size: 15%; font-weight: bold;">
-                                    <option value="" disabled selected hidden>Make</option>
-                                    <option value="volv">Volvo</option>
-                                    <option value="saab">Saab</option>
-                                    <option value="opel">Opel</option>
-                                    <option value="audi">Audi</option>
-                                </select>
-                            </center>
-                        </div>
-                        <div class="row">
 
+              <div class="col-2 search">
+                <div class="container-fluid" style="padding: 0;">
+                  <div id="search-head" class="row" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
+                      <center>
+                          <h1 style="font-weight: bold; padding-top: 5px; padding-bottom: 5px;">Search</h1>
+                      </center>
+                  </div>
+                  <div class="row selector-row">
+                      <center>
+                          <select id="selectors" style="padding-right: 10%; background-image: url(images/dropdown.png); background-repeat: no-repeat, repeat; background-position: right 1.5em top 50%, 0 0; background-size: 15%; font-weight: bold;">
+                              <option value="" disabled selected hidden>Make</option>
+                              <option value="volv">Volvo</option>
+                              <option value="saab">Saab</option>
+                              <option value="opel">Opel</option>
+                              <option value="audi">Audi</option>
+                          </select>
+                      </center>
+                  </div>
+                  <div class="row">
+                    <center>
+                      <div class="dropdown">
+                        <button style="background-image: url(images/dropdown.png); background-repeat: no-repeat, repeat; background-position: right 1.5em top 50%, 0 0; background-size: 15%; font-weight: bold;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Dropdown button
+                        </button>
+                        <div style="margin-left: 87px;" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
                         </div>
-                        <div class="row">
-
-                        </div>
-                    </div>
+                      </div>
+                    </center>
+                  </div>
+                  <div class="row">
+                    
+                  </div>
                 </div>
+
+              </div>
                 <div class="col-10">
                   <div class="flex-container" style="margin-top: 125px;">
                     <?php
