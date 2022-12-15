@@ -118,13 +118,12 @@
     background-color: #ffff;
   }
 #sBox{
-  margin-left: 10;
   font-size: 40px;
   border: #ffff;
   background-color: #318481;
   padding: auto;
   width: 600px;
-  height: 265px;
+  height: 465px;
 }
 span {
   border-radius: 15px;

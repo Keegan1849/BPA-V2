@@ -1,11 +1,8 @@
-body {
-  margin: 10%;
-}
 
 #slider {
   position: relative;
-  width: 600px;
-  height: 365px;
+  width: 700px;
+  height: 465px;
   overflow: hidden;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
@@ -22,12 +19,11 @@ body {
 #slider ul li {
   position: relative;
   height: 100%;
- 
   float: left;
 }
 #slider ul li img{
-  width: 500px;
-  height: 265px;
+  width: 700px;
+  height: 465px;
 }
 #slider #prev, #slider #next {
   width: 50px;
