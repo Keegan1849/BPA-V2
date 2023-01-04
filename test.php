@@ -15,115 +15,111 @@
         <script src="/javascript/nav.js"></script>
 
     </head>
-    <body style="background-color: #F7F7F7;">
-      <!--START NAVBAR-->
-      <div class="navbar2">
-        <a href="contact.html" style="padding-right: 4%;">CONTACT</a>
-        <a href="homepage.html #gmap_canvas" style="padding-right: 1.5%;">MAP</a>
-        <img src="/images/revised-point.png" width="20px" style="float: right; margin-top: 5px;">
-        <a style="padding-right: 1.5%; color: #717171;">(740)-548-0708</a>
-      </div>
+        <?php
+          $make;
+          $model;
+          $year;
+          $miles1;
+          $miles2;
+          if(!empty($_GET["make"])) {$make = $_GET["make"];}
+          if(!empty($_GET["model"])) {$model = $_GET["model"];}
+          if(!empty($_GET["year"])) {$year = $_GET["year"];}
+          if(!empty($_GET["miles1"])) {$miles1 = $_GET["miles1"];}
+          if(!empty($_GET["miles2"])) {$miles2 = $_GET["miles2"];}
+          $search = 0;
+          $more = 0; 
+          if(!empty($make) || !empty($model) || !empty($miles1) || !empty($miles2))
+          {
+              $search = 1; 
+          }
 
-        <div id="navlist">
-          <a>
-          <div class="slideshow-container2">
-            
-            <div class="mySlides fade">
-              <img src="images/CarBrandLogos/chevrolet-logo.png" style="margin-top: 0; width:40px">
-            </div>
-            
-            <div class="mySlides fade">
-              <img src="images/CarBrandLogos/ford-logo.png" style="margin-top: 0; width:40px">
-            </div>
-          
-            <div class="mySlides fade">
-              <img src="images/CarBrandLogos/ford-mustang-logo.png" style="margin-top: 0; width:40px">
-            </div>
+          $servername = "localhost:3306";
+          $username = "root";
+          $password = "password";
+          $database = "bpa";
 
-            <div class="mySlides fade">
-              <img src="images/CarBrandLogos/honda-logo.png" style="margin-top: 0; width:40px">
-            </div>
-            
-            <div class="mySlides fade">
-              <img src="images/CarBrandLogos/hyundai-logo.png" style="margin-top: 0; width:40px">
-            </div>
-          
-            <div class="mySlides fade">
-              <img src="images/CarBrandLogos/subaru-logo.png" style="margin-top: 0; width:40px">
-            </div>
-          
-            </div>
+          // Create connection
+          $conn = new mysqli($servername, $username, $password, $database);
 
-            <div>
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </div>
-            </a>
-            <script>
-            let slideIndex = 0;
-            showSlides();
-            
-            function showSlides() {
-              let i;
-              let slides = document.getElementsByClassName("mySlides");
-              let dots = document.getElementsByClassName("dot");
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
+          // Check connection
+          if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+          }
+
+          $sql = "SELECT * FROM car";
+          if($search == 1){
+              $sql .= " where";
+          }
+          if(!empty($make)){
+              if($more == 1){
+                  $sql .= " OR make like '%$make%'";
+
+              }else{
+                  $sql .= " make like '%$make%'";
+                  $more = 1;
               }
-              slideIndex++;
-              if (slideIndex > slides.length) {slideIndex = 1}    
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
+          }
+          if(!empty($model)){
+              if($more == 1){
+                  $sql .= " OR model like '%$model%'";
+              }else{
+                  $sql .= " model like '%$model%'";
+                  $more = 1;
               }
-              slides[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " active";
-              setTimeout(showSlides, 2000); // Change image every 2 seconds
+          }
+          if(!empty($miles1) && !empty($miles2)){
+              if($more == 1){
+                  $sql .= " OR miles > '$miles1' AND miles < '$miles2'";
+              }else{
+                  $sql .= " miles > '$miles1' AND miles < '$miles2'";
+                  $more = 1;
+              }
+          }else if(!empty($miles1) && empty($miles2)){
+              if($more == 1){
+                  $sql .= " OR miles > '$miles1'";
+              }else{
+                  $sql .= " miles > '$miles1'";
+                  $more = 1;
+              }
+          }else if(empty($miles1) && !empty($miles2)){
+              if($more == 1){
+                  $sql .= " OR miles < '$miles2'";
+              }else{
+                  $sql .= " miles < '$miles2'";
+                  $more = 1;
+              }
+          }
+          $sql .= ";";
+
+          echo "<h3>SQL Statement: ".$sql."</h3><br><hr>";
+
+          $result = $conn->query($sql);
+          echo "<table border=1>";
+          echo "<tr><td><b>Make</b></td><td><b>Model</b></td><td><b>Year</b></td><td><b>Miles</b></td><td><b>Price</b></td></tr>";
+          if ($result->num_rows > 0) {
+            // output data of each row
+            while($row = $result->fetch_assoc()) {
+              echo "<tr><td>".$row["make"]."</td><td>".$row["model"]."</td><td>".$row["year"]."</td><td>".$row["miles"]."</td><td>".$row["price"]."</td></tr>";
             }
-            </script>
-          
-              <a href="homepage.html"><img id="logo" src="images/logos/BPA logo.png"></a>
-              <a style="padding-left: 20px; margin-top: 2px;" href="inventory.php">Inventory</a>
-              <a style="padding-left: 20px; margin-top: 2px;" href="service.html">Service</a>
-            </div>
-        </div>
-        <!--END NAVBAR-->
-        <div class="flex-container" style="margin-top: 300px;">
-          <?php
-
-            $servername = "localhost:3306";
-            $username = "root";
-            $password = "password";
-            $database = "bpa";
-
-            // Create connection
-            $conn = new mysqli($servername, $username, $password, $database);
-
-            $sql = "SELECT * FROM vehicle;";
-            $result = $conn->query($sql);
-
-            if ($result->num_rows > 0) {
-              while($row = $result->fetch_assoc()) {
-                    ?>
-                    <a href="viewModel.php?id=<?=$row["vehicle_id"]?>" border="0">
-                        <div class="flex-item">
-                            <img src="/images/cars/<?=$row["vehicle_img"]?>"><br>
-                            <span class="f1"><?=$row["vehicle_make"]?></span><br>
-                            <span class="f1"><?=$row["vehicle_model"]?></span><br>
-                            <span class="f2"><?=$row["vehicle_extcolor"]?></span>
-                        </div>
-                    </a>    
-                    <?php
-              }
-            } else {
-              echo "0 Results";
-            }
-            echo "</table>";
-            $conn->close();
-          ?>  
-        </div>
+          } else {
+            echo "0 results";
+          }
+          echo "</table>";
+          $conn->close();
+          ?>
+            <hr>
+            <h2>HTML Search Form</h2>
+            <form action="search.php">
+            <label for="make">Make:</label><br>
+            <input type="text" id="make" name="make"><br>
+            <label for="model">Model:</label><br>
+            <input type="text" id="model" name="model"><br>
+            <label for="miles1">Miles(Lower Bound):</label><br>
+            <input type="text" id="miles1" name="miles1"><br>
+            <label for="miles2">Miles(Upper Bound):</label><br>
+            <input type="text" id="miles2" name="miles2">
+            <br>
+            <input type="submit" value="Submit">
+            </form>
     </body>
 </html>
