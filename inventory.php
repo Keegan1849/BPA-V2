@@ -90,7 +90,7 @@
             }
             </script>
           
-              <a href="homepage.html"><img id="logo" src="images/logos/BPA logo.png"></a>
+              <a href="homepage.html"><img id="logo" src="images/logos/BPALogo.png"></a>
               <a style="padding-left: 20px; margin-top: 2px;" href="inventory.php">Inventory</a>
               <a style="padding-left: 20px; margin-top: 2px;" href="service.html">Service</a>
             </div>
@@ -99,7 +99,7 @@
         
         <div class="container-fluid" style="padding: 0;">
             <div class="row">
-
+              <!--
               <div class="col-2 search">
                 <div class="container-fluid" style="padding: 0;">
                   <div id="search-head" class="row" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
@@ -136,9 +136,9 @@
                     
                   </div>
                 </div>
-
               </div>
-                <div class="col-10">
+              -->
+                <div class="col-12 ">
                   <div class="flex-container" style="margin-top: 125px;">
                     <?php
           

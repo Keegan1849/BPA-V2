@@ -33,10 +33,10 @@
                 $search = 1; 
             }
 
-            $servername = "localhost:3306";
-            $username = "root";
-            $password = "password";
-            $database = "bpa";
+            $servername = "pdb50.atspace.me";
+            $username = "4237754_team6";
+            $password = "8gp:E_.U7JyhlnK^";
+            $database = "4237754_team6";
 
             // Create connection
             $conn = new mysqli($servername, $username, $password, $database);
@@ -46,46 +46,46 @@
             die("Connection failed: " . $conn->connect_error);
             }
 
-            $sql = "SELECT * FROM car";
+            $sql = "SELECT * FROM vehicle";
             if($search == 1){
                 $sql .= " where";
             }
             if(!empty($make)){
                 if($more == 1){
-                    $sql .= " OR make like '%$make%'";
+                    $sql .= " OR vehicle_make like '%$make%'";
 
                 }else{
-                    $sql .= " make like '%$make%'";
+                    $sql .= " vehicle_make like '%$make%'";
                     $more = 1;
                 }
             }
             if(!empty($model)){
                 if($more == 1){
-                    $sql .= " OR model like '%$model%'";
+                    $sql .= " OR vehicle_model like '%$model%'";
                 }else{
-                    $sql .= " model like '%$model%'";
+                    $sql .= " vehicle_model like '%$model%'";
                     $more = 1;
                 }
             }
             if(!empty($miles1) && !empty($miles2)){
                 if($more == 1){
-                    $sql .= " OR miles > '$miles1' AND miles < '$miles2'";
+                    $sql .= " OR vehicle_miles > '$miles1' AND vehicle_miles < '$miles2'";
                 }else{
-                    $sql .= " miles > '$miles1' AND miles < '$miles2'";
+                    $sql .= " vehicle_miles > '$miles1' AND vehicle_miles < '$miles2'";
                     $more = 1;
                 }
             }else if(!empty($miles1) && empty($miles2)){
                 if($more == 1){
-                    $sql .= " OR miles > '$miles1'";
+                    $sql .= " OR vehicle_miles > '$miles1'";
                 }else{
-                    $sql .= " miles > '$miles1'";
+                    $sql .= " vehicle_miles > '$miles1'";
                     $more = 1;
                 }
             }else if(empty($miles1) && !empty($miles2)){
                 if($more == 1){
-                    $sql .= " OR miles < '$miles2'";
+                    $sql .= " OR vehicle_miles < '$miles2'";
                 }else{
-                    $sql .= " miles < '$miles2'";
+                    $sql .= " vehicle_miles < '$miles2'";
                     $more = 1;
                 }
             }
@@ -109,7 +109,7 @@
             ?>
                 <hr>
                 <h2>HTML Search Form</h2>
-                <form action="search.php">
+                <form action="test.php">
                 <label for="make">Make:</label><br>
                 <input type="text" id="make" name="make"><br>
                 <label for="model">Model:</label><br>
