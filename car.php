@@ -107,7 +107,7 @@
 
                   <div class="row">
         <center>
-        <img style="width: 275px; border-radius: 10px 10px 0 0; padding-bottom: 10px;" src="/images/cars/<?=$row["vehicle_img"]?>">
+        <img style="padding-top:10px;"src="/images/befunky.jpg">
 
         </center>
                   </div>
