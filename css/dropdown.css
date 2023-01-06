@@ -1,5 +1,5 @@
 .dropbtn {
-    background-color: #000000;
+    background-color: #F7F7F7;
     color: rgb(255, 255, 255);
     padding: 16px;
     font-size: 16px;
@@ -30,7 +30,7 @@
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #000000}
+  .dropdown-content a:hover {background-color: #F7F7F7}
   
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
