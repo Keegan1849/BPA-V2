@@ -148,14 +148,14 @@ img {vertical-align: middle;}
 }
 
 .very-bottom h1{
-  color: #717171;
+  color: white;
   padding-bottom: 1%;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .very-bottom-desc-text{
-  color: #717171;
-  font-size: 30px;
+  color: white;
+  font-size: 25px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
