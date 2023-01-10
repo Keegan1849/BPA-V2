@@ -90,7 +90,7 @@
             }
             </script>
           
-              <a href="homepage.html"><img id="logo" src="images/logos/BPALogo.png"></a>
+              <a href="homepage.html"><img id="logo" src="images/Logos/BPAlogo.png"></a>
               <a style="padding-left: 20px; margin-top: 2px;" href="inventory.php">Inventory</a>
               <a style="padding-left: 20px; margin-top: 2px;" href="service.html">Service</a>
             </div>
@@ -142,10 +142,10 @@
                   <div class="flex-container" style="margin-top: 125px;">
                     <?php
           
-                      $servername = "localhost:3306";
-                      $username = "root";
-                      $password = "password";
-                      $database = "bpa";
+                      $servername = "pdb50.atspace.me";
+                      $username = "4237754_team6";
+                      $password = "8gp:E_.U7JyhlnK^";
+                      $database = "4237754_team6";
           
                       // Create connection
                       $conn = new mysqli($servername, $username, $password, $database);
