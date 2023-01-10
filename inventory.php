@@ -24,7 +24,7 @@
       <!--START NAVBAR-->
       <div class="navbar2">
         <a href="contact.html" style="padding-right: 4%;">CONTACT</a>
-        <a href="homepage.html #gmap_canvas" style="padding-right: 1.5%;">MAP</a>
+        <a href="homepage.html#mid-text" style="padding-right: 1.5%;">MAP</a>
         <img src="/images/revised-point.png" width="20px" style="float: right; margin-top: 5px;">
         <a style="padding-right: 1.5%; color: #717171;">(740)-548-0708</a>
       </div>
@@ -142,10 +142,10 @@
                   <div class="flex-container" style="margin-top: 125px;">
                     <?php
           
-                      $servername = "pdb50.atspace.me";
-                      $username = "4237754_team6";
-                      $password = "8gp:E_.U7JyhlnK^";
-                      $database = "4237754_team6";
+                      $servername = "localhost";
+                      $username = "root";
+                      $password = "password";
+                      $database = "bpa";
           
                       // Create connection
                       $conn = new mysqli($servername, $username, $password, $database);
