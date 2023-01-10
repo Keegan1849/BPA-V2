@@ -33,10 +33,10 @@
                 $search = 1; 
             }
 
-            $servername = "pdb50.atspace.me";
-            $username = "4237754_team6";
-            $password = "8gp:E_.U7JyhlnK^";
-            $database = "4237754_team6";
+            $servername = "localhost";
+            $username = "root";
+            $password = "password";
+            $database = "bpa";
 
             // Create connection
             $conn = new mysqli($servername, $username, $password, $database);
