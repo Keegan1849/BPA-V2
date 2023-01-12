@@ -99,7 +99,7 @@
         
         <div class="container-fluid" style="padding: 0;">
             <div class="row">
-              <!--
+              <!--Search Filter
               <div class="col-2 search">
                 <div class="container-fluid" style="padding: 0;">
                   <div id="search-head" class="row" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
@@ -119,7 +119,7 @@
                       </center>
                   </div>
                   <div class="row">
-                    <center>
+                    <center>+
                       <div class="dropdown">
                         <button style="background-image: url(images/dropdown.png); background-repeat: no-repeat, repeat; background-position: right 1.5em top 50%, 0 0; background-size: 15%; font-weight: bold;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Dropdown button
@@ -152,7 +152,7 @@
           
                       $sql = "SELECT * FROM vehicle;";
                       $result = $conn->query($sql);
-          
+
                       if ($result->num_rows > 0) {
                         while($row = $result->fetch_assoc()) {
                               ?>
